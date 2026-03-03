@@ -1,0 +1,371 @@
+/* ===== ROADMAP.CSS - Career Roadmap Specific Styles ===== */
+
+/* Timeline */
+.roadmap-container {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.roadmap-line {
+  position: absolute;
+  left: 27px;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--primary-300), var(--secondary-300));
+  border-radius: 999px;
+}
+
+.roadmap-step {
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
+.roadmap-step:nth-child(1) { animation-delay: 0.1s; }
+.roadmap-step:nth-child(2) { animation-delay: 0.2s; }
+.roadmap-step:nth-child(3) { animation-delay: 0.3s; }
+.roadmap-step:nth-child(4) { animation-delay: 0.4s; }
+.roadmap-step:nth-child(5) { animation-delay: 0.5s; }
+.roadmap-step:nth-child(6) { animation-delay: 0.6s; }
+.roadmap-step:nth-child(7) { animation-delay: 0.7s; }
+.roadmap-step:nth-child(8) { animation-delay: 0.8s; }
+
+.step-number {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: white;
+  border: 3px solid var(--primary-500);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--primary-600);
+  position: relative;
+  z-index: 10;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+}
+
+.roadmap-step:hover .step-number {
+  transform: scale(1.1);
+  background: var(--primary-500);
+  color: white;
+}
+
+.step-card {
+  flex: 1;
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gray-100);
+  transition: all 0.3s ease;
+}
+
+.roadmap-step:hover .step-card {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-200);
+}
+
+.step-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 0.5rem;
+}
+
+.step-desc {
+  color: var(--gray-600);
+  margin-bottom: 1rem;
+}
+
+/* Path Cards */
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.path-card {
+  background: var(--gray-50);
+  border-left: 4px solid var(--primary-500);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.path-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  background: white;
+}
+
+.path-title {
+  font-weight: 700;
+  color: var(--gray-700);
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.path-desc {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+}
+
+/* Career Cards Grid */
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.career-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border-left: 4px solid;
+  box-shadow: var(--shadow);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.career-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, transparent, rgba(255,255,255,0.3));
+  border-radius: 50%;
+  transform: translate(30px, -30px);
+  transition: transform 0.5s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-xl);
+}
+
+.career-card:hover::before {
+  transform: translate(40px, -40px) scale(1.2);
+}
+
+.career-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.career-card:hover .career-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.career-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--gray-800);
+}
+
+.career-desc {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.career-details {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray-100);
+}
+
+/* Category Tabs */
+.category-tabs {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+  scrollbar-width: none;
+}
+
+.category-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.category-tab {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border-radius: 999px;
+  font-weight: 500;
+  color: var(--gray-600);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  border: 1px solid var(--gray-200);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.category-tab:hover {
+  background: var(--primary-50);
+  color: var(--primary-600);
+  border-color: var(--primary-300);
+  transform: translateY(-2px);
+}
+
+.category-tab.active {
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
+  color: white;
+  border-color: transparent;
+  box-shadow: var(--shadow-md);
+}
+
+/* PDF Download Styles */
+.pdf-wrapper {
+  width: 794px;
+  margin: 0 auto;
+  background: white;
+}
+
+.pdf-page {
+  width: 794px;
+  min-height: 1123px;
+  padding: 25mm 20mm;
+  margin: 0;
+  position: relative;
+  background: white;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+.pdf-header {
+  border-bottom: 3px solid var(--gray-200);
+  padding-bottom: 5mm;
+  margin-bottom: 10mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.pdf-title {
+  font-size: 24pt;
+  font-weight: 800;
+  color: var(--gray-900);
+}
+
+.pdf-subtitle {
+  font-size: 10pt;
+  color: var(--gray-400);
+  font-weight: 600;
+}
+
+.pdf-roadmap-item {
+  position: relative;
+  padding-left: 15mm;
+  margin-bottom: 10mm;
+  page-break-inside: avoid;
+}
+
+.pdf-roadmap-item::before {
+  content: "";
+  position: absolute;
+  left: 5.5mm;
+  top: 10mm;
+  bottom: -10mm;
+  width: 1px;
+  background: var(--gray-200);
+}
+
+.pdf-roadmap-item:last-child::before {
+  display: none;
+}
+
+.pdf-step-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 11mm;
+  height: 11mm;
+  background: var(--gray-50);
+  border: 2px solid var(--gray-200);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14pt;
+  color: var(--gray-600);
+  z-index: 2;
+}
+
+.pdf-footer {
+  position: absolute;
+  bottom: 10mm;
+  left: 20mm;
+  right: 20mm;
+  display: flex;
+  justify-content: space-between;
+  font-size: 9pt;
+  color: var(--gray-400);
+  border-top: 1px solid var(--gray-200);
+  padding-top: 4mm;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .roadmap-container {
+    padding-left: 1rem;
+  }
+  
+  .roadmap-line {
+    left: 20px;
+  }
+  
+  .step-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  
+  .career-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .path-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+  }
+  
+  .roadmap-step {
+    break-inside: avoid;
+  }
+}
