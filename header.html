@@ -1,0 +1,111 @@
+<!-- Header Component -->
+<header class="sticky top-0 z-40 glass border-b border-white/20 shadow-sm">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-3 group">
+        <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+          <i class="fas fa-graduation-cap text-white text-xl"></i>
+        </div>
+        <div class="hidden sm:block">
+          <span class="text-xl font-bold text-slate-800">StudentRoadmap</span>
+          <p class="text-xs text-slate-500">Your Career Navigation Partner</p>
+        </div>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a href="index.html" class="nav-link font-medium text-slate-700 hover:text-primary-600 transition-colors relative group">
+          Home
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 transition-all group-hover:w-full"></span>
+        </a>
+        <a href="roadmap.html" class="nav-link font-medium text-slate-700 hover:text-primary-600 transition-colors relative group">
+          Roadmaps
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 transition-all group-hover:w-full"></span>
+        </a>
+        <a href="quiz.html" class="nav-link font-medium text-slate-700 hover:text-primary-600 transition-colors relative group">
+          Career Quiz
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 transition-all group-hover:w-full"></span>
+        </a>
+        <a href="about.html" class="nav-link font-medium text-slate-700 hover:text-primary-600 transition-colors relative group">
+          About Us
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 transition-all group-hover:w-full"></span>
+        </a>
+        <a href="contact.html" class="nav-link font-medium text-slate-700 hover:text-primary-600 transition-colors relative group">
+          Contact
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 transition-all group-hover:w-full"></span>
+        </a>
+      </nav>
+      
+      <!-- Desktop Auth Buttons -->
+      <div class="hidden lg:flex items-center space-x-4" id="desktopAuth">
+        <a href="login.html" class="px-6 py-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+          Sign In
+        </a>
+        <a href="signup.html" class="px-6 py-2 bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300">
+          Get Started Free
+        </a>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button id="menuToggle" class="lg:hidden p-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition-colors">
+        <i class="fas fa-bars text-slate-600 text-xl"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="fixed inset-0 bg-white/95 backdrop-blur-xl z-50 transform -translate-x-full transition-transform duration-300 lg:hidden">
+  <div class="flex flex-col h-full p-6">
+    <div class="flex justify-between items-center mb-8">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center">
+          <i class="fas fa-graduation-cap text-white text-lg"></i>
+        </div>
+        <span class="text-xl font-bold text-slate-800">StudentRoadmap</span>
+      </div>
+      <button id="closeMenu" class="p-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition-colors">
+        <i class="fas fa-times text-slate-600"></i>
+      </button>
+    </div>
+    
+    <nav class="flex-1 space-y-2">
+      <a href="index.html" class="flex items-center space-x-3 p-4 rounded-xl hover:bg-primary-50 transition-colors">
+        <i class="fas fa-home text-primary-500 w-6"></i>
+        <span class="font-medium">Home</span>
+      </a>
+      <a href="roadmap.html" class="flex items-center space-x-3 p-4 rounded-xl hover:bg-primary-50 transition-colors">
+        <i class="fas fa-map text-primary-500 w-6"></i>
+        <span class="font-medium">Roadmaps</span>
+      </a>
+      <a href="quiz.html" class="flex items-center space-x-3 p-4 rounded-xl hover:bg-primary-50 transition-colors">
+        <i class="fas fa-question-circle text-primary-500 w-6"></i>
+        <span class="font-medium">Career Quiz</span>
+      </a>
+      <a href="about.html" class="flex items-center space-x-3 p-4 rounded-xl hover:bg-primary-50 transition-colors">
+        <i class="fas fa-users text-primary-500 w-6"></i>
+        <span class="font-medium">About Us</span>
+      </a>
+      <a href="contact.html" class="flex items-center space-x-3 p-4 rounded-xl hover:bg-primary-50 transition-colors">
+        <i class="fas fa-envelope text-primary-500 w-6"></i>
+        <span class="font-medium">Contact</span>
+      </a>
+    </nav>
+    
+    <div class="border-t border-slate-200 pt-6" id="mobileAuth">
+      <div class="flex items-center space-x-4">
+        <a href="login.html" class="flex-1">
+          <button class="w-full py-3 bg-primary-500 text-white font-semibold rounded-xl hover:bg-primary-600 transition-colors">
+            Login
+          </button>
+        </a>
+        <a href="signup.html" class="flex-1">
+          <button class="w-full py-3 border-2 border-primary-500 text-primary-500 font-semibold rounded-xl hover:bg-primary-50 transition-colors">
+            Sign Up
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
