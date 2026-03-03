@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Roadmaps - Student Roadmap</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/roadmap.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="relative z-10 py-16">
+        <div class="container mx-auto px-4">
+            
+            <!-- Page Header -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4 animate-fade-in">
+                    Explore <span class="gradient-text">Career Roadmaps</span>
+                </h1>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto animate-fade-in delay-200">
+                    Choose your path and get a step-by-step guide to your dream career
+                </p>
+            </div>
+            
+            <!-- Category Tabs -->
+            <div class="category-tabs animate-fade-in delay-400">
+                <button class="category-tab active" data-category="all">All Careers</button>
+                <button class="category-tab" data-category="medical">Medical</button>
+                <button class="category-tab" data-category="engineering">Engineering</button>
+                <button class="category-tab" data-category="commerce">Commerce</button>
+                <button class="category-tab" data-category="arts">Arts</button>
+                <button class="category-tab" data-category="government">Government</button>
+            </div>
+            
+            <!-- Career Grid -->
+            <div class="career-grid">
+                <!-- Medical Careers -->
+                <a href="career-roadmap.html?career=doctor" class="career-card" data-category="medical" style="border-left-color: #10b981;">
+                    <div class="career-icon">👨‍⚕️</div>
+                    <h3 class="career-title">Doctor (MBBS)</h3>
+                    <p class="career-desc">Complete guide to becoming a doctor in India</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 5.5 years + specialization
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=bds" class="career-card" data-category="medical" style="border-left-color: #10b981;">
+                    <div class="career-icon">🦷</div>
+                    <h3 class="career-title">Dentist (BDS)</h3>
+                    <p class="career-desc">Dental surgery career path and opportunities</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 5 years
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=pharmacy" class="career-card" data-category="medical" style="border-left-color: #10b981;">
+                    <div class="career-icon">💊</div>
+                    <h3 class="career-title">Pharmacist</h3>
+                    <p class="career-desc">Pharmacy education and career guide</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 4 years
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=nursing" class="career-card" data-category="medical" style="border-left-color: #10b981;">
+                    <div class="career-icon">🏥</div>
+                    <h3 class="career-title">Nursing</h3>
+                    <p class="career-desc">B.Sc Nursing and career opportunities</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 4 years
+                    </div>
+                </a>
+                
+                <!-- Engineering Careers -->
+                <a href="career-roadmap.html?career=software-developer" class="career-card" data-category="engineering" style="border-left-color: #3b82f6;">
+                    <div class="career-icon">💻</div>
+                    <h3 class="career-title">Software Developer</h3>
+                    <p class="career-desc">Complete guide to becoming a software engineer</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 4 years (B.Tech)
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=civil-engineer" class="career-card" data-category="engineering" style="border-left-color: #3b82f6;">
+                    <div class="career-icon">🏗️</div>
+                    <h3 class="career-title">Civil Engineer</h3>
+                    <p class="career-desc">Infrastructure and construction career path</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 4 years
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=mechanical-engineer" class="career-card" data-category="engineering" style="border-left-color: #3b82f6;">
+                    <div class="career-icon">⚙️</div>
+                    <h3 class="career-title">Mechanical Engineer</h3>
+                    <p class="career-desc">Manufacturing and design career guide</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 4 years
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=electrical-engineer" class="career-card" data-category="engineering" style="border-left-color: #3b82f6;">
+                    <div class="career-icon">⚡</div>
+                    <h3 class="career-title">Electrical Engineer</h3>
+                    <p class="career-desc">Power and electronics career path</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 4 years
+                    </div>
+                </a>
+                
+                <!-- Commerce Careers -->
+                <a href="career-roadmap.html?career=ca" class="career-card" data-category="commerce" style="border-left-color: #f59e0b;">
+                    <div class="career-icon">📊</div>
+                    <h3 class="career-title">Chartered Accountant</h3>
+                    <p class="career-desc">Complete CA course structure and guide</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 4-5 years
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=cma" class="career-card" data-category="commerce" style="border-left-color: #f59e0b;">
+                    <div class="career-icon">📈</div>
+                    <h3 class="career-title">CMA</h3>
+                    <p class="career-desc">Cost Management Accounting career</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 3-4 years
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=cs" class="career-card" data-category="commerce" style="border-left-color: #f59e0b;">
+                    <div class="career-icon">📝</div>
+                    <h3 class="career-title">Company Secretary</h3>
+                    <p class="career-desc">CS course structure and opportunities</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 3-4 years
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=mba" class="career-card" data-category="commerce" style="border-left-color: #f59e0b;">
+                    <div class="career-icon">🎯</div>
+                    <h3 class="career-title">MBA</h3>
+                    <p class="career-desc">Master of Business Administration guide</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 2 years
+                    </div>
+                </a>
+                
+                <!-- Government Careers -->
+                <a href="career-roadmap.html?career=civil-servant" class="career-card" data-category="government" style="border-left-color: #8b5cf6;">
+                    <div class="career-icon">🏛️</div>
+                    <h3 class="career-title">Civil Servant (IAS/IPS)</h3>
+                    <p class="career-desc">UPSC preparation complete guide</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 1-2 years prep
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=banking" class="career-card" data-category="government" style="border-left-color: #8b5cf6;">
+                    <div class="career-icon">🏦</div>
+                    <h3 class="career-title">Banking (PO/Clerk)</h3>
+                    <p class="career-desc">Banking exams and career progression</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 6-12 months prep
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=defense" class="career-card" data-category="government" style="border-left-color: #8b5cf6;">
+                    <div class="career-icon">⚔️</div>
+                    <h3 class="career-title">Defense Services</h3>
+                    <p class="career-desc">Army, Navy, Air Force careers</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> NDA/CDS exams
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=railways" class="career-card" data-category="government" style="border-left-color: #8b5cf6;">
+                    <div class="career-icon">🚂</div>
+                    <h3 class="career-title">Railways (RRB)</h3>
+                    <p class="career-desc">Indian Railway jobs and exams</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> Multiple levels
+                    </div>
+                </a>
+                
+                <!-- Arts Careers -->
+                <a href="career-roadmap.html?career=journalist" class="career-card" data-category="arts" style="border-left-color: #ec4899;">
+                    <div class="career-icon">📰</div>
+                    <h3 class="career-title">Journalist</h3>
+                    <p class="career-desc">Media and journalism career guide</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 3 years
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=designer" class="career-card" data-category="arts" style="border-left-color: #ec4899;">
+                    <div class="career-icon">🎨</div>
+                    <h3 class="career-title">Fashion Designer</h3>
+                    <p class="career-desc">Fashion design education and career</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 4 years
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=hotel-management" class="career-card" data-category="arts" style="border-left-color: #ec4899;">
+                    <div class="career-icon">🏨</div>
+                    <h3 class="career-title">Hotel Management</h3>
+                    <p class="career-desc">Hospitality industry career guide</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 3-4 years
+                    </div>
+                </a>
+                
+                <a href="career-roadmap.html?career=psychologist" class="career-card" data-category="arts" style="border-left-color: #ec4899;">
+                    <div class="career-icon">🧠</div>
+                    <h3 class="career-title">Psychologist</h3>
+                    <p class="career-desc">Psychology education and careers</p>
+                    <div class="mt-4 flex items-center text-sm text-slate-500">
+                        <i class="fas fa-clock mr-2"></i> 5+ years
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-primary-500 to-secondary-500 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300 z-50 opacity-0 translate-y-4">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- Chatbot -->
+    <div id="chatbot"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/chatbot.js"></script>
+    
+    <script>
+        // Load components
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+            
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+            
+        // Category filtering
+        document.querySelectorAll('.category-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const category = this.dataset.category;
+                
+                // Filter cards
+                document.querySelectorAll('.career-card').forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.9)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
